@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div id="main" className="bg-gray-900  w-full h-screen text-white">
+        <div id="main" className="bg-gray-900 w-full h-screen text-white">
           <Navbar />
           {children}
         </div>
