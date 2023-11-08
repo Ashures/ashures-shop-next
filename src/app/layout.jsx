@@ -1,6 +1,6 @@
 import "public/css/main.css";
 import "public/css/all.min.css";
-import Navbar from "@/components/layouts/Navbar";
+import Navbar from "@/components/layouts/nav/Navbar";
 
 export const metadata = {
   title: 'Ashures Shop',
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div id="main" className="bg-gray-900 w-full h-screen text-white">
+        <div id="main" className="flex justify-center bg-gray-900 w-full h-screen text-white">
           <Navbar />
           {children}
         </div>
