@@ -27,17 +27,17 @@ const Marketplace = () => {
 
   return (
     <div id="marketplace" className="grid grid-cols-6 grid-rows-2 gap-1.5 w-full h-full">
-        <div id="marketplace-left" className="row-start-1 row-end-4 flex justify-center">
-          <button onClick={() => changePage(-1)}>
-            <i className="fa-solid fa-arrow-left p-2 rounded-full border border-gray-500 hover:border-white text-3xl"></i>
+        <div id="marketplace-left" className="row-start-1 row-end-4 flex justify-center items-center">
+          <button className="h-fit" onClick={() => changePage(-1)}>
+            <i className="fa-solid fa-arrow-left p-2 h-12 w-12 rounded-full border border-gray-500 hover:border-white text-3xl"></i>
           </button>
         </div>
         {/*  */}
         <ItemList items={getItems()} />
         {/*  */}
-        <div id="marketplace-right" className="row-start-1 row-end-4 col-start-6 flex justify-center">
-          <button onClick={() => changePage(1)}>
-            <i className="fa-solid fa-arrow-right p-2 rounded-full border border-gray-500 hover:border-white text-3xl"></i>
+        <div id="marketplace-right" className="row-start-1 row-end-4 col-start-6 flex justify-center items-center">
+          <button className="h-fit" onClick={() => changePage(1)}>
+            <i className="fa-solid fa-arrow-right p-2 h-12 w-12 rounded-full border border-gray-500 hover:border-white text-3xl"></i>
           </button>
         </div>
       </div>
